@@ -1,0 +1,24 @@
+.modal#Modal
+	.modal-body
+		form(action="https://mycapital.autoweboffice.ru/?r=personal/newsletter/sub/add&id=28323&lg=ru&Contact[id_newsletter]=1" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-modal
+			h3.form-title Запишись на бесплатную презентацию партнерской программы 
+				span MASTER VISION
+			.name-block
+				input(type="hidden" value="1" id="required_fields_name" name="required_fields[name]")
+				input(class="input input-name" placeholder="Ваше имя*" name="Contact[name]" type="text")
+			.email-block.email-block-modal
+				input( type="hidden" value="1" name="required_fields[email]")
+				input(class="input input-mail input-mail-modal" name="Contact[email]" type="text" placeholder="Ваш email")
+			.button-wrapper
+				button(type="submit").button.button-form.button-modal Записаться
+			.clearfix
+			p.alert-message
+			.checking.checking-modal
+				input(type="checkbox" id="check-3" checked).check
+				label(for="check-3").check-label Я согласен с 
+					a.politics-link(href="#myPolitics") условиями обработки персональных данных по 152 - Ф3
+			div
+				#formTypeSpecificVars-3(style="display: none;")
+					input(type="hidden" value="1" id="form_newsletter_id_newsletter-3" name="Contact[id_newsletter]")
+				<!-- API код канала рекламы -->
+				input(type="hidden" value="" id="form_newsletter_id_advertising_channel_page-3" name="Contact[id_advertising_channel_page]")

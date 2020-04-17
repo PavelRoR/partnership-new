@@ -1,0 +1,16 @@
+section#revs
+	.container
+		h3.revs-title Отзывы действующих партнеров об обучении
+		.row
+			.col-md-6.col-sm-6
+				each n in [1,2,3]
+					a.rev-link(href="/img/revs/rev-"+n+'.png' data-fancybox='revs')
+						img.rev-img(src="/img/revs/rev-"+n+'.png', alt="Отзыв "+n)
+			.col-md-6.col-sm-6
+				each n in [4,5,6]
+					a.rev-link(href="/img/revs/rev-"+n+'.png' data-fancybox='revs')
+						img.rev-img(src="/img/revs/rev-"+n+'.png', alt="Отзыв "+n)
+		.row
+			.col-md-6.col-sm-6.col-md-offset-3.col-sm-offset-3
+				a.rev-link(href="/img/revs/rev-7.png" data-fancybox='revs')
+						img.rev-img(src="/img/revs/rev-7.png", alt="Отзыв 7")
