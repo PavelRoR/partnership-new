@@ -4,7 +4,7 @@
 	outline none
 body
 	font-size: 18px
-	font-family: GP
+	font-family: Gy
 	color #fff
 	background-color: #000
 	line-height: 1.5
@@ -25,10 +25,30 @@ header
 footer
 	width 100%
 	display block
+.laptop-wrapper
+	position relative
+	z-index 50
+	&:before
+		content ''
+		display block
+		width 120%
+		height 143%
+		// max-width 761px
+		margin 0 auto
+		top -8%
+		left -10%
+		right 0
+		position absolute
+		background-image url(../img/images/laptop.png)
+		background-repeat no-repeat
+		background-position: center
+		background-size cover
+	// padding 30px 90px 55px
 .video-wrapper
 	margin 0 auto
 	position relative
 	width 100%
+	top 3px
 	&:before
 		content ''
 		height 0
@@ -57,3 +77,23 @@ footer
 		right 0
 		bottom 0
 		cursor pointer
+.button
+	display block
+	text-align center
+	font-size: 18px
+	font-family: M
+	padding 9px 10px
+	background-color: #5a1a5e
+	color #fff
+	margin 0 auto
+	width 100%
+	max-width 280px
+	text-decoration: none
+	transition: all .4s ease
+	&:focus
+		text-decoration: none
+		color #fff
+	&:hover
+		text-decoration: none
+		color #fff
+		background-color: #5a1a5e + 15%

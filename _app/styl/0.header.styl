@@ -1,0 +1,41 @@
+header
+	display: block
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	width: 100%;
+	padding 15px 0
+	&.header-stick
+		background-image url(../img/backs/main.png)
+		background-repeat no-repeat
+		background-position: top center
+		background-size: cover
+.header-links
+	line-height: 46px
+	li
+		display: inline-block
+		margin-right: 20px
+		&:last-child
+			margin-right: 0
+		a
+			color #fff
+			font-size: 14px
+			transition: all .5s ease
+			&:hover
+				border-bottom: 1px dashed
+			&.active
+				transition: all .5s ease
+				border-bottom: 1px dashed
+.header-contacts
+	text-align: right
+.contact
+	font-family: GyB
+	display block
+	color #fff
+	font-size: 18px
+	&:focus
+		text-decoration: none
+		color #fff
+	&:hover
+		text-decoration: underline
+		color #fff

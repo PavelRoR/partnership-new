@@ -13,6 +13,55 @@ if (isIE) {
 }
 
 $(document).ready(function () {
+    /*Фиксед шапка*/
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 50) {
+                $("header").addClass('header-stick');
+                //				$(".header-stick").css("display",'flex');
+
+            } else {
+                $("header").removeClass('header-stick');
+                //				$(".header-stick").css('display','none');
+
+            }
+        })
+
+    });
+    $(function () {
+        $(".header-links li a").click(function (f) {
+            f.preventDefault();
+            var a = $(this).attr("href"),
+                b = $(a).offset().top;
+            $("body,html").animate({
+                scrollTop: b
+            }, 500);
+            $('.header-links li a').removeClass('active');
+            $(this).addClass('active');
+
+        });
+    });
+    $(function () {
+
+        var c = ".header-links li";
+
+        function d() {
+            var a = $(document).scrollTop();
+            $(c + " a").each(function () {
+                var b = $(this).attr("href");
+                var f = $(b);
+                if (f.position().top <= a && f.position().top + f.outerHeight() > a) {
+                    $(c + " a.active").removeClass("active");
+                    $(this).addClass("active")
+                } else {
+                    $(this).removeClass("active")
+                }
+            })
+        }
+        d();
+    });
+
+
     $(function () {
         var check = $('.check', this),
             email = $('.input-mail', this),

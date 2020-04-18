@@ -1,0 +1,96 @@
+#info
+	padding 40px 0
+	background-image url(../img/backs/info.png)
+	background-repeat no-repeat
+	background-position: center
+	background-size: cover
+	position relative
+	&:before
+		content: ''
+		display block
+		width 100%
+		height 63px
+		background-image url(../img/backs/info-up.png)
+		background-repeat no-repeat
+		background-position: center top
+		background-size: cover
+		position absolute
+		left 0
+		right 0
+		top - 63px
+		z-index 20
+	&:after
+		content: ''
+		display block
+		position absolute
+		width 100%
+		height 65px
+		background-image url(../img/backs/info-low.png)
+		background-repeat no-repeat
+		background-position: center bottom
+		background-size: cover
+		left 0
+		right 0
+		bottom: -65px
+.laptop-wrapper-info
+	margin-top: 60px
+.video-wrapper-info
+	// max-width 560px
+	width 90%
+.info-text-video
+	position relative
+	width 100%
+	max-width 300px
+	margin-left: 70px
+	&:before
+		content: ''
+		display block
+		position absolute
+		z-index 53
+		height 285px
+		width 2px
+		background-color #fff
+		top 23px
+		left -25px
+	&:after
+		content: ''
+		display block
+		position absolute
+		width 15px
+		height 15px
+		border-radius: 50px
+		background-color: #772377
+		top 300px
+		left -32px
+		z-index 54
+.info-title
+	position relative
+	font-size: 35px
+	font-family: MBk
+	&:before
+		content ''
+		display block
+		position absolute
+		width 192px
+		height 121px
+		background-image url(../img/icons/title-arrow.png)
+		background-repeat no-repeat
+		background-position: center
+		background-size contain
+		left -202px
+		top -22px
+	&:after
+		content: ''
+		display block
+		// position absolute
+		width 345px
+		height 15px
+		background-color: #772377
+		margin 20px 0
+.info-text
+	font-family: GP
+	margin-bottom: 35px
+	span
+		font-family: GPB
+		font-size: 25px
+		display: block
