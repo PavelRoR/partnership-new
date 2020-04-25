@@ -1,10 +1,11 @@
 #info
-	padding 40px 0
+	padding 40px 0 0
 	background-image url(../img/backs/info.png)
 	background-repeat no-repeat
 	background-position: center
 	background-size: cover
 	position relative
+	z-index 20
 	&:before
 		content: ''
 		display block
@@ -67,6 +68,7 @@
 	position relative
 	font-size: 35px
 	font-family: MBk
+	font-weight: 900
 	&:before
 		content ''
 		display block
@@ -78,7 +80,8 @@
 		background-position: center
 		background-size contain
 		left -202px
-		top -22px
+		top -52px
+		z-index 30
 	&:after
 		content: ''
 		display block
@@ -87,10 +90,17 @@
 		height 15px
 		background-color: #772377
 		margin 20px 0
+	&+.info-text
+		font-size: 25px
 .info-text
 	font-family: GP
 	margin-bottom: 35px
+	position relative
+	z-index 55
 	span
 		font-family: GPB
 		font-size: 25px
 		display: block
+		font-weight: 900
+.button-info
+	margin 0 0 30px

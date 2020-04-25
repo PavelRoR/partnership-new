@@ -2,8 +2,10 @@
 	padding 200px 0 40px
 	background-image url(../img/backs/advantages.png)
 	background-repeat no-repeat
-	background-position: center
+	background-position: center top
 	background-size: cover
+	position relative
+	z-index 18
 .advantage
 	margin-bottom: 40px
 	padding 0 0 0 400px
@@ -13,15 +15,19 @@
 		font-size: 30px
 		font-family: GPB
 		margin-bottom: 25px
+		font-weight: 900
 	&-text
 		font-size: 20px
 		font-family: GP
+		span
+			display inline-block
 	&-list
 		list-style none
 		margin-left: 10px
 	&-1
 		position relative
-		background-image url(../img/images/adv-1.png)
+		background-image url('../img/images/advim-1.png')
+		background-position: left 120px center
 		&:before
 			content: ''
 			display block
@@ -40,10 +46,12 @@
 		text-align: right
 		background-position: right center
 	&-2
-		background-image url(../img/images/adv-2.png)
+		background-image url(../img/images/advim-2.png)
 	&-3
-		background-image url(../img/images/adv-3.png)
+		background-image url(../img/images/advim-3.png)
 	&-4
-		background-image url(../img/images/adv-4.png)
+		background-image url(../img/images/advim-4.png)
+		background-position: right 120px center
 	&-5
-		background-image url(../img/images/adv-5.png)
+		background-image url(../img/images/advim-5.png)
+		background-position: left 120px center

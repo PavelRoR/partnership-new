@@ -1,6 +1,6 @@
 .modal#Modal
 	.modal-body
-		form(action="https://mycapital.autoweboffice.ru/?r=personal/newsletter/sub/add&id=28323&lg=ru&Contact[id_newsletter]=1" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-modal
+		form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-modal
 			h3.form-title Запишись на бесплатную презентацию партнерской программы 
 				span MASTER VISION
 			.name-block
@@ -19,6 +19,8 @@
 					a.politics-link(href="#myPolitics") условиями обработки персональных данных по 152 - Ф3
 			div
 				#formTypeSpecificVars-3(style="display: none;")
-					input(type="hidden" value="1" id="form_newsletter_id_newsletter-3" name="Contact[id_newsletter]")
-				<!-- API код канала рекламы -->
-				input(type="hidden" value="" id="form_newsletter_id_advertising_channel_page-3" name="Contact[id_advertising_channel_page]")
+					input(type="hidden" value=group id="form_newsletter_id_newsletter-3" name="Contact[id_newsletter]")
+					<!-- API код канала рекламы -->
+					input(type="hidden" value="0" id="form_newsletter_id_advertising_channel_page_3" name="Contact[id_advertising_channel_page]")
+					input(type="hidden" name="formId" value=formId)
+					input(type="hidden" name="formVc" value=formVc)

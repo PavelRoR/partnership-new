@@ -1,0 +1,25 @@
+-var head_url = 'https://mastervision.su/partnership-program/thanks/';
+-var head_title = 'Благодарим Вас за регистрацию на вебинар по партнерской программе Master Vision';
+//- -var head_description = 'Партнерская программа Master Vision - лучший инструмент для заработка онлайн';
+//- -var head_img = 'img/banner.jpg';
+-var styles = '../css/styles.min.css';
+-var fav_ico = '../favicon.ico';
+-var fav_png = '../favicon.png';
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		section#thanks
+			include pug/0.header-2.pug
+			.container
+				h1.thanks-title Благодарим Вас за регистрацию на вебинар по партнерской программе 
+					span Master Vision
+				p.thanks-text Не дожидаясь вебинара, Вы уже можете стать нашим партнером и изучить интерфейс партнерского кабинета.
+				p.thanks-text Нужно лишь пройти регистрацию по кнопке ниже
+				a.button.button-thanks(href="https://shop.mastervision.su/?r=partners/registration&lg=ru") Зарегистрироваться партнером
+		include pug/main/10.footer.pug
+		include pug/scripts/body_bottom_scripts
