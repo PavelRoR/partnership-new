@@ -46,6 +46,19 @@ $(document).ready(function () {
             transitionEffect: 'slide'
         });
     });
+    $(function () {
+        var hdr = $('header');
+        $('.modal-menu').on('click', function () {
+            if (!hdr.hasClass('visible')) {
+                hdr.addClass('visible').css('left', '0')
+                $('header.visible .header-links li').click(function () {
+                    $('header').css("left", "-200px").removeClass('visible');
+                })
+            } else {
+                hdr.css("left", "-200px").removeClass('visible');
 
+            }
+        })
+    });
     /*Конец документа*/
 });

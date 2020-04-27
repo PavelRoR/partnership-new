@@ -166,9 +166,27 @@ $(document).ready(function () {
     //         }
     //     });
     // });
-    // $(".video-wrapper-rev img").click(function (e) {
-    //     var a = $(this).parent().attr("data-vim");
-    //     $(this).parent().html('<iframe src="https://player.vimeo.com/video/' + a + '?autoplay=1&mute=1"  allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>')
-    // });
+    $(".video-wrapper-info img").click(function () {
+        var a = $(this).parent().attr("data-vim");
+        $(this).parent().html('<iframe src="https://player.vimeo.com/video/' + a + '?autoplay=1&mute=1"  allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>')
+    });
+
+    $(function () {
+        var hdr = $('header');
+        $('.modal-menu').on('click', function () {
+            if (!hdr.hasClass('visible')) {
+                hdr.addClass('visible').css('left', '0')
+                $('header.visible .header-links li').click(function () {
+                    $('header').css("left", "-200px").removeClass('visible');
+                })
+            } else {
+                hdr.css("left", "-200px").removeClass('visible');
+
+            }
+        })
+    });
+    // $(function () {
+
+    // })
     /*Конец документа*/
 });

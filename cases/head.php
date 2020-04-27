@@ -34,7 +34,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-2 col-sm-2"><a href="https://mastervision.su" target="_blank"><img id="logo" src="../img/logo.png" alt="Логотип"/></a></div>
-            <div class="col-md-7 col-sm-7"><nav class="main-menu">
+            <div class="col-md-7 col-sm-6 col-md-offset-0 col-sm-offset-1"><nav class="main-menu">
                 <ul class="header-links">
                   <li><a href="../../p/">На главную</a></li>
                   <li><a href="../cases/case-1.php">Кейс 1</a></li>
