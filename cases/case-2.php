@@ -1,7 +1,7 @@
 <?php require_once('head.php'); ?>
 <p class="case-pre">Кейс занявший второе место в номинации "Исповедь партнера"</p>
 <img src="../img/avas/ava-2.png" alt="Аватар" class="case-avatar">
-<h3 class="case-title">Ольга Доброва</h3>
+<h3 class="case-title wow flipInX">Ольга Доброва</h3>
 <bloquote class="case-bq">Исповедь о том, как я сменила любимую работу на партнерку MasterVision</bloquote>
 <p class="case-text">Привет, читатель, друг, коллега, партнер.</p>
 <p class="case-text">А может, ты только готовишься к сотрудничеству? Раздумываешь над участием в партнерских программах? Гложут сомнения?</p>

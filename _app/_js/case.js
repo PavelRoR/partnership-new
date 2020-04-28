@@ -1,7 +1,9 @@
 //@prepros-prepend jquery-2.1.1.min.js
 //@prepros-prepend jquery.fancybox.min.js
+//@prepros-prepend wow.min.js
 
 $(document).ready(function () {
+    new WOW().init();
     /*Фиксед шапка*/
     $(function () {
         $(window).scroll(function () {
